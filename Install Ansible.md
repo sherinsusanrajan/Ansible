@@ -1,10 +1,8 @@
-Installation steps:
-
 # Ansible Installation
 
 ### Prerequisites
 
-1. A RHEL EC2 instance 
+A RHEL EC2 instance 
 
 ### Installation steps:
 Update your EC2 Instance --> yum update
@@ -18,15 +16,13 @@ Install Ansible
 ```sh 
 yum install ansible -y 
 ```
-Testing:
-```sh 
-Check Ansible version 
+Test by checking Ansible version 
 ```sh 
 ansible --version
 ```
 
 Create a new user for ansible administration & grant admin access to user (common user for Master and Slave)
-```sh 
+```sh
 useradd ansadmin
 passwd ansadmin
 # below command adds ansadmin to sudoers file. But strongly recommended to use "visudo" command if you are aware vi or nano editor. 
