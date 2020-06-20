@@ -33,6 +33,7 @@ Using keybased authentication is advised. If you are still at learning stage use
 ```sh 
 # sed command replaces "PasswordAuthentication no to yes" without editing file 
  sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+ service sshd restart
 ``` 
 To enable passwordless authentication between master and slave generate key and for that login as ansadmin user on master and generate ssh key (Master)
 ```sh 
