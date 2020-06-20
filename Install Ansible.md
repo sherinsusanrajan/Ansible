@@ -43,6 +43,7 @@ Copy this keys to all ansible client nodes (from Master)
 ```sh 
 ssh-copy-id <target-server>
 ```
+login to the client nodes from master by ssh clienthostname and it shouldnt ask for password after first attempt.
 
 Update target servers information on /etc/ansible/hosts file (Master)
 ```sh 
