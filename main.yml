@@ -20,4 +20,5 @@
     zypper:
       name: '*'
       state: latest
+      disble_gpg_check: yes
     when: ansible_distribution == "openSUSE Leap"
